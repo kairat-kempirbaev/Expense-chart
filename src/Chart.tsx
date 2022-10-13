@@ -41,7 +41,7 @@ function Chart(props: AppProps) {
                 Plot.ruleY([0])
             ]
         });
-        divRef.current.append(chart);
+        divRef.current?.append(chart);
         return () => chart.remove();
     }, [data])
     return (
